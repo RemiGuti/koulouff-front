@@ -1,0 +1,42 @@
+.story-photo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30vh;
+    margin-right: 10vh;
+    padding-top: 2vh;
+  }
+
+  .story-true {
+    margin-top: 4vh;
+    margin-left: 2vw;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .photo {
+    margin: auto;
+  }
+
+  .story-avatar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30vh;
+    margin-right: 10vh;
+    padding-top: 5vh;
+  }
+
+  .story-false {
+    margin-top: 4vh;
+    margin-right: 2vw;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .avatar {
+    margin: auto;
+    height: auto;
+  }
+
+  .jump {
+    margin-bottom: 2vh;
+  }

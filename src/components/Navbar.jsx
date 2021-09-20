@@ -4,6 +4,7 @@ import Facebook from "../pictures/facebook.png"
 import Twitter from "../pictures/twitter.png"
 import Discord from "../pictures/discord.png"
 import Instagram from "../pictures/insta.png"
+import { Link } from 'react-router-dom';
 import "./Navbar.css"
 
 function Navbar() {
@@ -25,34 +26,35 @@ function Navbar() {
                 </div>
                 
                 <div className="menu">
-                    <a className="animated-button1" href="index.html">
+                    <Link className="animated-button1" to="/">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         STREAM
-                    </a>
-                    <a className="animated-button1" href="bio.html">
+                    </Link>
+                   
+                    <Link className="animated-button1" to="/bio">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         BIO
-                    </a>
-                    <a className="animated-button1" href="">
+                    </Link>
+                    <Link className="animated-button1" to="/clips">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         CLIPS
-                    </a>
-                    <a className="animated-button1" href="">
+                    </Link>
+                    <Link className="animated-button1" to="/planning">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         PLANNING
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="miniFooter">

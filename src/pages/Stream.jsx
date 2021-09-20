@@ -1,34 +1,26 @@
 import React from 'react'
-// import {TwitchEmbed} from "react-twitch-embed"
 import Iconsub from "../pictures/iconSub.png"
 import Iconig from "../pictures/iconIg.png"
 import Icondon from "../pictures/iconDon.png"
+import ReactTwitchEmbedVideo from "react-twitch-embed-video"
 import "./Stream.css"
 
 function Stream() {
-    // const video = new Twitch.Embed("twitch-embed", {
-    //     width: "100%",
-    //     height: 600,
-    //     channel: "koulouff",
-    //     theme: "dark",
-    // });
     return (
         <div>
             <section>
-           <video src="https://player.twitch.tv/?channel=koulouff" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="100%"/>
-            {/* <video controls src="https://embed.twitch.tv/embed/v1.js" {video}/> */}
-            {/* <video>
-                <div id="twitch-embed"></div>
-                <script src="https://embed.twitch.tv/embed/v1.js"></script>
-                <script type="text/javascript">
-                new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: 600,
-                    channel: "koulouff",
-                    theme: "dark",
-                });
-                </script>
-            </video> */}
+            <div className="twitch-embed">
+            <ReactTwitchEmbedVideo className="prout"
+            channel="koulouff" 
+            onPlay={function noRefCheck(){}}
+            onReady={function noRefCheck(){}}
+            theme="dark"
+            chat="default"
+            width={"100%"}
+            height={"606"}
+            collection={{}}
+            />
+            </div>
 
             <div className="button">
                 <div className="social-container">

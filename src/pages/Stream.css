@@ -1,11 +1,10 @@
-.live {
-    margin-left: 30vh;
-    margin-right: 10vh;
-    padding-top: 2vh;
-  }
-
-  #twitch-embed {
+  .twitch-embed {
     border: #92731d solid 2px;
+    background-color: #d92626;
+    margin-left: 15vw;
+    margin-right: 10vh;
+    width: 80vw;
+    height: 62vh;
   }
 
   .button {
@@ -13,6 +12,7 @@
     display: flex;
     justify-content: space-around;
     width: 65vw;
+    margin-left: 30vh;
   }
 
   .social-element {

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import DayCard from '../components/DayCard.jsx';
-import "./Planning.css"
+import AdminDay from "./AdminDay.jsx"
 
-function Planning() {
+function Admin() {
     const [days, setDays] = useState([]);
 
     useEffect(() => {
@@ -13,16 +12,15 @@ function Planning() {
         .then((data) => setDays(data))
     }, [])
 
-
     return (
-        <div className="Planning">
-            {days.map((day) => (
+        <div>
+             {days.map((day) => (
                 <div key={day.id} className="planning">
-                    <DayCard day={day}/>
+                    <AdminDay day={day}/>
                 </div>
             ))}
         </div>
     )
 }
 
-export default Planning
+export default Admin

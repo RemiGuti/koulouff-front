@@ -1,0 +1,9 @@
+.Planning {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
